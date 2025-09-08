@@ -183,9 +183,6 @@ bool oled_task_user(void) {
 
 #ifdef ENCODER_ENABLE
 bool encoder_update_user(uint8_t index, bool clockwise) {
-    if (!encoder_update_user(index, clockwise)) {
-        return false;
-    }
     // 0 is left-half encoder,
     // 1 is right-half encoder
     if (index == 0) {
@@ -203,7 +200,7 @@ bool encoder_update_user(uint8_t index, bool clockwise) {
             tap_code(KC_PGUP);
         }
     }
-    return true;
+    return false;
 }
 #endif
 

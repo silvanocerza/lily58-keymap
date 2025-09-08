@@ -11,6 +11,8 @@ RGBLIGHT_ENABLE = no        # Enable WS2812 RGB underlight.
 SWAP_HANDS_ENABLE = no      # Enable one-hand typing
 OLED_ENABLE = yes           # OLED display
 LAYER_LOCK_ENABLE = yes
+ENCODER_ENABLE = yes
+EXTRAKEY_ENABLE = yes
 
 # I'm using a Liatris board, it has its own bootloader
 CONVERT_TO=liatris
